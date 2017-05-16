@@ -3,21 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Task List</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
-<body id="body">
-<table class="table table-bordered">
-    <thead>
-    <tr>
-        <td>名称</td>
-        <td>进度</td>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>11111</td>
-    </tr>
-    </tbody>
-</table>
+<body>
+<div id="body" v-cloak>
+    <div class="container mt20">
+        <h4 class="mt5 mb5 text-center">任务中心</h4>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <td v-for="row in columns">{{row.title}}</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr v-for="row in data">
+                    <td>{{row.name ? row.name : "--"}}</td>
+                    <td>{{row.progress ? row.progress : "--"}}%</td>
+                    <td>{{row.taskLevel ? row.taskLevel : "--"}}</td>
+                    <td>{{row.createTime ? row.createTime : "--"}}</td>
+                    <td>{{row.updateTime ? row.updateTime : "--"}}</td>
+                    <td>{{row.finishTime ? row.finishTime : "--"}}</td>
+                    <td>{{row.taskDescription ? row.taskDescription : "--"}}</td>
+                    <td>
+                        <button class="btn btn-success" @click="finished(row)">完成</button>
+                        <button class="btn btn-danger" @click="deleted(row)">删除</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/business.js"></script>
 </body>
 </html>
