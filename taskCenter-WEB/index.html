@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head id="head">
     <meta charset="UTF-8">
-    <title>Task List</title>
+    <title>Task Center</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
 <div id="body" v-cloak>
     <div class="container mt20">
-        <h4 class="mt5 mb5 text-center">任务中心</h4>
+        <h4 class="mt5 mb5 text-center">{{title}}</h4>
         <div class="table-responsive">
             <table class="table table-bordered">
                 <thead>
@@ -27,8 +27,8 @@
                     <td>{{row.finishTime ? row.finishTime : "--"}}</td>
                     <td>{{row.taskDescription ? row.taskDescription : "--"}}</td>
                     <td>
-                        <button class="btn btn-success" @click="finished(row)">完成</button>
-                        <button class="btn btn-danger" @click="deleted(row)">删除</button>
+                        <button class="btn btn-success" @click="finished(row)">{{finished}}</button>
+                        <button class="btn btn-danger" @click="deleted(row)">{{deleted}}</button>
                     </td>
                 </tr>
                 </tbody>
