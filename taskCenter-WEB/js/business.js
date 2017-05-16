@@ -1,6 +1,10 @@
 var taskCenter = new Vue({
     "el": "#body",
     "data": {
+        "title": "任务中心",
+        "finished": "完成",
+        "deleted": "删除",
+        "edit": "编辑",
         "columns": [
             {
                 "title": "任务名称"
@@ -53,7 +57,7 @@ var taskCenter = new Vue({
         ];
         _this.data = data;
     },
-    "methods":{
+    "methods": {
         "finished": function (data) {
             console.log("你点击的是：" + data.name)
         },
