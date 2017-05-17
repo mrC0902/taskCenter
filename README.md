@@ -1,15 +1,30 @@
-# TaskCenter
+# taskCenter
 
-> This is a taskCenter,Main to list the list should to do
+> 系统相关信息
 
-> 1、This just use to list the task of the daily life or the work
+基于VueJS及Bootstrap进行开发的一个任务列表及清单;
 
-> 2、This copy right by Louis,if you want to use this code.You should contact to me.
+> 技术栈
 
-# Contact
+VueJS、JQ、Bootstrap、CSS
 
-> E-mail: huangxin1273@vip.qq.com
 
-> QQ: 379181273
+> 规划
 
-> Wechat: 
+Version 1.0.0：
+  
+  简单的实现增、删、改、查的功能
+  
+Version 2.0.0：
+
+  增加用户登录功能
+  
+Version 2.0.1
+
+  增加用户注册功能
+  
+Version 2.0.2
+
+  增加操作鉴权功能
+  
+  增加Group功能
