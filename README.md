@@ -1,30 +1,33 @@
 # taskCenter
 
-> 系统相关信息
+### 当前版本
 
-基于VueJS及Bootstrap进行开发的一个任务列表及清单;
+>Version 1.0.0
 
-> 技术栈
+### 系统相关信息
 
-VueJS、JQ、Bootstrap、CSS
+> 基于VueJS及Bootstrap进行开发的一个任务列表及清单;
 
+### 技术栈
 
-> 规划
+> VueJS、JQ、Bootstrap、CSS
 
-Version 1.0.0：
+### 版本规划
+
+* Version 1.0.0：
+
+> 简单的实现增、删、改、查的功能
+  
+* Version 2.0.0：
+
+> 增加用户登录功能
+  
+* Version 2.0.1
+
+> 增加用户注册功能
+  
+* Version 2.0.2
+
+> 增加操作鉴权功能
   
-  简单的实现增、删、改、查的功能
-  
-Version 2.0.0：
-
-  增加用户登录功能
-  
-Version 2.0.1
-
-  增加用户注册功能
-  
-Version 2.0.2
-
-  增加操作鉴权功能
-  
-  增加Group功能
+> 增加Group功能
